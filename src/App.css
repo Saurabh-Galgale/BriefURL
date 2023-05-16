@@ -1,0 +1,12 @@
+* {
+  font-family: 'Kalam', cursive;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+
+.firstbag {
+  height: 100vh;
+  background-image: url("./Assets/ban1.jpg");
+  background-size: 100% 100vh;
+}

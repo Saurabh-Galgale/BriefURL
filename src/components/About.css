@@ -1,0 +1,54 @@
+#aboutsec {
+    width: 70%;
+    margin: 5rem auto 3rem auto;
+    color: white;
+}
+
+#aboutsec h1 {
+    font-size: 4rem;
+}
+
+#aboutsec p {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: rgb(218, 165, 32);
+}
+
+#aboutsec h2 {
+    width: 95%;
+    margin-bottom: 2rem;
+}
+
+#logo {
+    margin-top: 2rem;
+    padding: 0.5rem;
+    width: 60%;
+    text-align: center;
+    border: 2px solid rgb(218, 165, 32);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo h2 {
+    color: rgb(218, 165, 32);
+}
+
+.js,
+.reactjs,
+.html,
+.css,
+.node,
+.mysql,
+.python,
+.mongo,
+.git {
+    background-color: white;
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    margin-left: 1rem;
+}

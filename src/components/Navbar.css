@@ -1,0 +1,41 @@
+
+#nav {
+    position: sticky;
+    top: 0;
+    color: white;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-image: radial-gradient(black, transparent);
+}
+
+#nav h1 {
+    margin-left: 1rem;
+    font-size: 4rem;
+    color: rgb(218, 165, 32);
+}
+
+#menu {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menutxt {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.menutxt:hover {
+    color: gold;
+}
+
+.menutxt:active {
+    color: gold;
+}
+

@@ -1,0 +1,73 @@
+
+#footer {
+    position: absolute;
+    height: 7vh;
+    max-width: 100%;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    /* background-image: radial-gradient(black, transparent); */
+    background-image: linear-gradient(black, transparent);
+}
+
+#footer h1 {
+    font-size: 2rem;
+}
+
+#linkedinlogofooter {
+    margin-right: 1rem;
+}
+
+.linkedin {
+    background-color: white;
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    margin-right: 1rem;
+}
+
+.youtube {
+    background-color: white;
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    margin-right: 1rem;
+}
+
+.twitter {
+    background-color: white;
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    margin-right: 1rem;
+}
+
+.insta {
+    background-color: white;
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    margin-right: 1rem;
+}
+
+.linkedin:hover {
+    background-color: black;
+}
+
+.youtube:hover {
+    background-color: black;
+}
+
+.twitter:hover {
+    background-color: black;
+}
+
+.insta:hover {
+    background-color: black;
+}
+
+
