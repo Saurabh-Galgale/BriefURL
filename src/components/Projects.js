@@ -1,5 +1,4 @@
 import React from 'react';
-import TicTacToe from '../Assets/TicTacToe.apk';
 import git from '../Assets/git.png';
 
 const Projects = () => {
