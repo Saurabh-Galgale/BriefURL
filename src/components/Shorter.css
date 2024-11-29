@@ -2,8 +2,9 @@
 #urldiv {
     margin: 3rem auto auto auto;
     width: 80%;
-    max-height: max-content;
+    max-height: 80vh; /* Set a max-height to allow scrolling when content exceeds */
     text-align: center;
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .urlspan {
@@ -60,10 +61,57 @@
     font-size: 2.5rem;
 }
 
+.short-url {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline; 
+  }
+
 .urlcopy {
     font-size: 2.8rem;
     margin-left: 2rem;
 }
 
 
-
+@media (max-width: 1000px) {
+    #urldiv {
+        width: 90%;  
+        margin: 2rem auto;
+        max-height: 60vh;
+        overflow-y: auto;
+    }
+  
+    #urldiv h1 {
+      font-size: 3rem;  /* Decrease font size for smaller screens */
+      width: 80%;  /* Increase width */
+      margin: 1rem auto;
+    }
+  
+    #inp {
+      width: 80%;  /* Increase input width for better spacing */
+      height: 6vh;
+      font-size: 1.8rem;  /* Adjust font size */
+    }
+  
+    #btn {
+      width: 30%;  /* Make button smaller on smaller screens */
+      font-size: 1.8rem;
+      height: 6vh;
+    }
+  
+    #para {
+      width: 90%;  /* Make the list container more responsive */
+      min-height: 8px;  /* Adjust height dynamically */
+      padding: 2px;
+    }
+  
+    #para li {
+      font-size: 2rem;  /* Adjust font size for better readability */
+    }
+  
+    .urlcopy {
+      font-size: 2.5rem;  /* Adjust icon size */
+      margin-left: 1rem;  /* Adjust margin */
+    }
+  }
+  

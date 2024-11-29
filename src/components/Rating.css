@@ -1,97 +1,169 @@
-
-.star-rating {
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
     color: white;
-    text-align: center;
-    background-color: transparent;
-    width: 60%;
-    margin: 0px auto;
-    padding: 10px;
-    border-radius: 50px;
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure body takes full height */
+    overflow-y: scroll; /* Allow vertical scrolling */
 }
 
-button {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 4rem;
+#rating_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh; /* Ensure that content takes at least full viewport height */
+    box-sizing: border-box; /* Include padding in height/width calculations */
 }
 
-.on {
-    color: orange;
-}
-
-.off {
-    color: #ccc;
-}
-
+/* Comments Section */
 #comments {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    height: 35vh;
-    width: 80%;
-    margin: 4rem auto 2rem auto;
+    flex-wrap: wrap; /* Allow wrapping for mobile */
+    justify-content: center; /* Center the sections */
+    margin-bottom: 2rem;
+    width: 100%;
+    gap: 1rem; /* Adds space between sections */
 }
 
 .section {
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
-    height: 30vh;
-    width: 30%;
-    background-image: radial-gradient(black, transparent);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    flex-basis: 30%; /* Adjust width using flex-basis */
+    min-width: 250px; /* Ensure a minimum width */
 }
 
-.section:nth-child(1) {
-    box-shadow: 5px 5px 10px 0 rgb(218, 165, 32);
-}
-
-.section:nth-child(2) {
-    box-shadow: 5px 5px 10px 0 rgb(218, 165, 32);
-}
-
-.section:nth-child(3) {
-    box-shadow: 5px 5px 10px 0 rgb(218, 165, 32);
+.section:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 .section h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
-    padding: 1rem;
 }
 
 .section p {
-    font-size: 1.5rem;
-    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
 }
 
+/* Input Section */
 .txt {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+    width: 100%;
 }
 
 .txt input {
-    height: 5vh;
-    width: 45%;
-    font-size: 1.5rem;
+    width: 70%;
+    padding: 0.8rem;
     border-radius: 20px;
+    font-size: 1rem;
+    margin-right: 1rem;
+    border: none;
 }
 
 .txt button {
-    font-size: 1.5rem;
-    height: 5vh;
-    padding: 8px;
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
     border-radius: 20px;
-    width: max-content;
-    background-image: linear-gradient(rgb(218, 165, 32), rgb(243, 210, 125));
+    background-color: #da9b20;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+.txt button:hover {
+    background-color: #f3d27d;
+}
+
+/* Mobile & Tablet Responsiveness */
+@media (max-width: 1024px) {
+    /* Adjust comments section for tablets */
+    #comments {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .section {
+        width: 48%; /* Two sections per row on tablet */
+        margin-bottom: 1rem;
+    }
+
+    .txt input {
+        width: 60%;
+    }
+
+    .txt button {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Adjust for mobile */
+    #comments {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .section {
+        width: 100%; /* Full width for mobile */
+        margin-bottom: 1rem;
+        height: auto;
+    }
+
+    .section h1 {
+        font-size: 1.5rem;
+    }
+
+    .section p {
+        font-size: 0.9rem;
+    }
+
+    .txt input {
+        width: 80%;
+    }
+
+    .txt button {
+        font-size: 1.1rem;
+    }
+
+    button {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjustments for very small screens (portrait mode) */
+    .section {
+        width: 100%; /* Take full width */
+        margin-bottom: 1rem;
+        height: auto;
+    }
+
+    .txt input {
+        width: 90%; /* Full width */
+    }
+
+    .txt button {
+        width: auto;
+    }
+
+    button {
+        font-size: 1.5rem;
+    }
+}

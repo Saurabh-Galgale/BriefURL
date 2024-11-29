@@ -7,6 +7,6 @@
 
 .firstbag {
   height: 100vh;
-  background-image: url("./Assets/ban1.jpg");
-  background-size: 100% 100vh;
+  background: linear-gradient(160deg, #000000, #153233); 
+  background-size: cover;
 }

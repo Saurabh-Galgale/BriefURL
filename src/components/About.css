@@ -1,15 +1,22 @@
 #aboutsec {
     width: 70%;
-    margin: 5rem auto 3rem auto;
+    margin: 5rem auto 4rem auto;
     color: white;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 0 1rem;
+}
+
+.aboutsecdiv {
+    margin-bottom: 6rem;
 }
 
 #aboutsec h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 #aboutsec p {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     color: rgb(218, 165, 32);
@@ -18,37 +25,108 @@
 #aboutsec h2 {
     width: 95%;
     margin-bottom: 2rem;
+    font-size: 1.75rem;
 }
 
 #logo {
     margin-top: 2rem;
-    padding: 0.5rem;
+    padding: 1rem;
     width: 60%;
     text-align: center;
     border: 2px solid rgb(218, 165, 32);
     border-radius: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 
 #logo h2 {
     color: rgb(218, 165, 32);
+    font-size: 2rem;
 }
 
-.js,
-.reactjs,
-.html,
-.css,
-.node,
-.mysql,
-.python,
-.mongo,
-.git {
+.skill-icon {
     background-color: white;
     height: 45px;
     width: 45px;
     border-radius: 10px;
     margin-left: 1rem;
+    object-fit: cover;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+    #aboutsec {
+        width: 80%;
+        margin: 4rem auto;
+        max-height: 85vh;
+    }
+
+    #aboutsec h1 {
+        font-size: 3rem;
+    }
+
+    #aboutsec p {
+        font-size: 1.8rem;
+    }
+
+    #aboutsec h2 {
+        font-size: 1.5rem;
+    }
+
+    #logo {
+        width: 75%;
+        padding: 1rem;
+    }
+
+    .skill-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    #logo h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #aboutsec {
+        width: 90%;
+        margin: 3rem auto;
+        max-height: 80vh;
+        padding: 0 1rem;
+    }
+
+    #aboutsec h1 {
+        font-size: 2.5rem;
+    }
+
+    #aboutsec p {
+        font-size: 1.5rem;
+    }
+
+    #aboutsec h2 {
+        font-size: 1.25rem;
+    }
+
+    #logo {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .skill-icon {
+        height: 35px;
+        width: 35px;
+    }
+
+    #logo h2 {
+        font-size: 1.5rem;
+    }
 }

@@ -1,73 +1,34 @@
-
 #footer {
-    position: absolute;
-    height: 7vh;
-    max-width: 100%;
-    width: 100%;
+    position: fixed; 
     bottom: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-    /* background-image: radial-gradient(black, transparent); */
-    background-image: linear-gradient(black, transparent);
+    width: 100%; 
+    display: flex; 
+    justify-content: center;  
+    align-items: center;  
+    backdrop-filter: blur(10px);  
+    z-index: 1000;  
+    padding: 0.5rem;  
 }
 
-#footer h1 {
-    font-size: 2rem;
+.git {
+    width: 40px; 
+    height: 40px;
+    object-fit: contain; 
+    position: relative; /* Needed for absolute positioning of the circle */
+    transition: transform 0.3s ease;
 }
 
-#linkedinlogofooter {
-    margin-right: 1rem;
+/* Hover effect for the circle */
+.git:hover {
+    transform: scale(1.2);
 }
+@media (max-width: 768px) {
+    #footer {
+        padding: 0.5rem; 
+    }
 
-.linkedin {
-    background-color: white;
-    height: 45px;
-    width: 45px;
-    border-radius: 10px;
-    margin-right: 1rem;
+    .git {
+        width: 30px;  
+        height: 30px;
+    }
 }
-
-.youtube {
-    background-color: white;
-    height: 45px;
-    width: 45px;
-    border-radius: 10px;
-    margin-right: 1rem;
-}
-
-.twitter {
-    background-color: white;
-    height: 45px;
-    width: 45px;
-    border-radius: 10px;
-    margin-right: 1rem;
-}
-
-.insta {
-    background-color: white;
-    height: 45px;
-    width: 45px;
-    border-radius: 10px;
-    margin-right: 1rem;
-}
-
-.linkedin:hover {
-    background-color: black;
-}
-
-.youtube:hover {
-    background-color: black;
-}
-
-.twitter:hover {
-    background-color: black;
-}
-
-.insta:hover {
-    background-color: black;
-}
-
-
