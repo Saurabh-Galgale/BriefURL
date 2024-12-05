@@ -15,7 +15,7 @@ function About() {
     <section id='aboutsec'>
       <div className='aboutsecdiv'>
         <h1>Hello! I'm Saurabh Galgale</h1>
-        <p>I'm a Mechanical Engineer, enthusiastic learner, and programmer.</p>
+        <p>I'm an engineer, an enthusiastic learner, and a programmer.</p>
         <h2>This URL shortener is my first deployed project. I am a full-stack developer, JavaScript is my first programming language and I love it.</h2>
         
         <div id='logo'>
